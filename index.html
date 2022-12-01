@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+    <title>Shopping Website</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+</head>
+
+<body>
+    <header class="header container-md header-container">
+        <section class="header-content py-4">
+            <section class="row">
+                <section class="header-phone-container col-12 col-md-4">
+                    <section
+                        class="d-flex justify-content-center justify-content-md-start header-phone-content mt-4 mx-auto mx-md-0">
+                        <span><i
+                                class="fa fa-phone fa-rotate-90 ml-2 mr-1 header-phone-icon text-dark text-uppercase"></i></span>
+
+                        <span>
+                            <p class="header-phone-text">0129-12323-123123</p>
+                        </span>
+                    </section>
+                </section>
+
+                <section class="header-brand-container mt-2 col-12 col-md-4">
+                    <h1><a href="#" class="header-brand-link text-dark text-decoration-none">AVIATO</a></h1>
+                </section>
+
+                <section class="header-tools-container mt-2 col-12 col-md-4">
+                    <section
+                        class="header-tools-content d-flex align-baseline justify-content-center justify-content-md-end pt-3">
+                        <section class="header-tools-cart dropdown" id="header-tools">
+                            <section class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                aria-expanded="false">
+                                <span><i class="fa fa-shopping-cart icon"></i></span>
+
+                                <span>Cart</span>
+                            </section>
+
+                            <section class="header-tools-dropdown dropdown-menu p-2 dropdown-items"
+                                id="header-tools-dropdown">
+                                <section class="media py-1">
+                                    <img src="assets/images/shop/products/product-7.jpg" alt=""
+                                        class="header-tools-dropdown-img">
+
+                                    <section class="media-body pl-1">
+                                        <h4 class="media-body-header">Item 7</h4>
+
+                                        <p class="media-body-text">
+                                            <span class="price-number">1 x </span>
+
+                                            <span class="media-price">120</span>
+                                        </p>
+
+                                        <p class="media-body-price">
+                                            <span class="dollar-sign">$</span>
+
+                                            <span class="media-price1">120</span>
+                                        </p>
+                                    </section>
+
+                                    <span class="media-icon d-flex justify-content-center align-items-center"><i
+                                            class="fa fa-times"></i>
+                                    </span>
+                                </section>
+
+                                <section class="media py-1">
+                                    <img src="assets/images/shop/cart/cart-2.jpg" alt=""
+                                        class="header-tools-dropdown-img">
+
+                                    <section class="media-body pl-2">
+                                        <h4 class="media-body-header">Item 9</h4>
+
+                                        <p class="media-body-text">
+                                            <span class="price-number">1 x </span>
+
+                                            <span class="media-price">225</span>
+                                        </p>
+
+                                        <p class="media-body-price">
+                                            <span class="dollar-sign">$</span>
+                                            
+                                            <span class="media-price1">225</span>
+                                        </p>
+                                    </section>
+
+                                    <span class="media-icon d-flex justify-content-center align-items-center"><i
+                                            class="fa fa-times"></i></span>
+                                </section>
+
+                                <section class="header-tools-cart-total py-1">
+                                    <section class="header-tools-cart-total-title d-flex justify-content-between">
+                                        <span>Total</span>
+
+                                        <span class="mr-1">$<span class="total-price" id="total-price">345</span></span>
+                                    </section>
+
+                                    <section class="header-tools-cart-footer">
+                                        <a href="#" class="header-tools-cart-footer-btn-1 btn btn-dark mr-1 rounded-0">
+                                            <span>VIEW CART</span>
+                                        </a>
+
+                                        <a href="#"
+                                            class="header-tools-cart-footer-btn-2 btn btn-light rounded-0 btn-outline-dark">
+                                            <span>CHECKOUT</span>
+                                        </a>
+                                    </section>
+                                </section>
+                            </section>
+                        </section>
+
+                        <section class="header-tools-search dropdown" id="header-search">
+                            <section class="header-tools-dropdown-toggle d-flex
+                            justify-content-center dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                aria-expanded="false">
+                                <span><i class="fa fa-search icon mr-1"></i></span>
+                                <span>
+                                    <p>Search</p>
+                                </span>
+                            </section>
+
+                            <section class="header-tools-search-input dropdown-menu dropdown-items"
+                                id="header-search-input">
+                                <input type="search" name="header-search" id="header-search" placeholder="Search..."
+                                    class="form-control">
+                            </section>
+                        </section>
+
+                        <section class="header-tools-lang">
+                            <select name="lang" id="lang" class="header-tools-select form-control border-0">
+                                <option value="en">EN</option>
+                                <option value="de">DE</option>
+                                <option value="fr">FR</option>
+                                <option value="es">ES</option>
+                            </select>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+
+        <section class="row">
+            <section class="col-12 py-4">
+                <section class="nav d-flex justify-content-center header-nav-container">
+                    <section class="nav-item mx-3">
+                        <a href="#">HOME</a>
+                    </section>
+
+                    <section class="nav-item mx-3 dropdown" id="header-nav-shop">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">SHOP
+                            <i class="fa fa-chevron-down nav-icon"></i>
+                        </a>
+
+                        <section class="dropdown-menu header-nav-shop-dropdown p-3 dropdown-items"
+                            id="header-nav-shop-dropdown">
+                            <section class="row">
+                                <section class="col-6">
+                                    <span class="header-nav-shop-dropdown-title">Pages</span>
+
+                                    <section class="dropdown-sectionider"></section>
+
+                                    <section class="dropdown-item dropdown-link header-nav-shop-dropdown-section">
+                                        <a href="#">SHOP</a>
+                                    </section>
+
+                                    <section class="dropdown-item dropdown-link header-nav-shop-dropdown-section">
+                                        <a href="#">CHECKOUT</a>
+                                    </section>
+
+                                    <section class="dropdown-item dropdown-link header-nav-shop-dropdown-section">
+                                        <a href="#">CART</a>
+                                    </section>
+
+                                    <section class="dropdown-item dropdown-link header-nav-shop-dropdown-section">
+                                        <a href="#">PRICING</a>
+                                    </section>
+
+                                    <section class="dropdown-item dropdown-link header-nav-shop-dropdown-section">
+                                        <a href="#">CONFORMATION</a>
+                                    </section>
+                                </section>
+
+                                <section class="col-6">
+                                    <span class="header-nav-shop-dropdown-title">Layout</span>
+
+                                    <section class="dropdown-sectionider"></section>
+
+                                    <section class="dropdown-item dropdown-link header-nav-shop-dropdown-section">
+                                        <a href="#">PRODUCT <br>DETAILS</a>
+                                    </section>
+
+                                    <section class="dropdown-item dropdown-link header-nav-shop-dropdown-section">
+                                        <a href="#">SHOP WITH <br>SIDEBAR</a>
+                                    </section>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+
+                    <section class="nav-item mx-3 dropdown" id="header-nav-pages">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">PAGES
+                            <i class="fa fa-chevron-down nav-icon"></i>
+                        </a>
+
+                        <section class="dropdown-menu header-nav-pages-dropdown p-3 dropdown-items"
+                            id="header-nav-pages-dropdown">
+                            <section class="row">
+                                <section class="col-3">
+                                    <span class="header-nav-shop-dropdown-title">Pages</span>
+
+                                    <section class="dropdown-sectionider"></section>
+
+                                    <section class="dropdown-item dropdown-link header-nav-pages-dropdown-section">
+                                        <a href="#">CONTACT US</a>
+                                    </section>
+
+                                    <section class="dropdown-item dropdown-link header-nav-pages-dropdown-section">
+                                        <a href="#">ABOUT US</a>
+                                    </section>
+
+                                    <section class="dropdown-item dropdown-link header-nav-pages-dropdown-section">
+                                        <a href="#">404 PAGE</a>
+                                    </section>
+
+                                    <section class="dropdown-item dropdown-link header-nav-pages-dropdown-section">
+                                        <a href="#">COMING SOON</a>
+                                    </section>
+
+                                    <section class="dropdown-item dropdown-link header-nav-pages-dropdown-section">
+                                        <a href="#">FAQ</a>
+                                    </section>
+
+                                </section>
+
+                                <section class="col-3">
+                                    <span class="header-nav-shop-dropdown-title">Layout</span>
+
+                                    <section class="dropdown-sectionider"></section>
+
+                                    <section class="dropdown-item dropdown-link header-nav-pages-dropdown-section">
+                                        <a href="#">USER INTERFACE</a>
+                                    </section>
+
+                                    <section class="dropdown-item dropdown-link header-nav-pages-dropdown-section">
+                                        <a href="#">ORDERS</a>
+                                    </section>
+
+                                    <section class="dropdown-item dropdown-link header-nav-pages-dropdown-section">
+                                        <a href="#">ADDRESS</a>
+                                    </section>
+
+                                    <section class="dropdown-item dropdown-link header-nav-pages-dropdown-section">
+                                        <a href="#">PROFILE DETAILS</a>
+                                    </section>
+                                </section>
+
+                                <section class="col-3">
+                                    <span class="header-nav-shop-dropdown-title">Layout</span>
+
+                                    <section class="dropdown-sectionider"></section>
+
+                                    <section class="dropdown-item dropdown-link header-nav-pages-dropdown-section">
+                                        <a href="#">LOGIN PAGE</a>
+                                    </section>
+
+                                    <section class="dropdown-item dropdown-link header-nav-pages-dropdown-section">
+                                        <a href="#">SIGNIN PAGE</a>
+                                    </section>
+
+                                    <section class="dropdown-item dropdown-link header-nav-pages-dropdown-section">
+                                        <a href="#">FORGET PASSWORD</a>
+                                    </section>
+                                </section>
+
+                                <section class="col-3">
+                                    <a href="#">
+                                        <img class="header-nav-img" src="assets/images/shop/header-img.jpg"
+                                            alt="Shop image">
+                                    </a>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+
+                    <section class="nav-item mx-3 dropdown" id="header-nav-blog">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">BLOG
+                            <i class="fa fa-chevron-down nav-icon"></i>
+                        </a>
+                        <section class="dropdown-menu px-2 dropdown-items" id="header-nav-blog-dropdown">
+                            <section class="dropdown-item dropdown-link header-nav-blog-link">
+                                <a href="#">BLOG LEFT SIDEBAR</a>
+                            </section>
+
+                            <section class="dropdown-item dropdown-link header-nav-blog-link">
+                                <a href="#">BLOG RIGHT SIDEBAR</a>
+                            </section>
+
+                            <section class="dropdown-item dropdown-link header-nav-blog-link">
+                                <a href="#">BLOG FULL WIDTH</a>
+                            </section>
+
+                            <section class="dropdown-item dropdown-link header-nav-blog-link">
+                                <a href="#"> BLOG TWO COLUMNS</a>
+                            </section>
+
+                            <section class="dropdown-item dropdown-link header-nav-blog-link">
+                                <a href="#">BLOG SINGLE</a>
+                            </section>
+                        </section>
+                    </section>
+
+                    <section class="nav-item mx-3 dropdown" id="header-nav-elements">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">ELEMENTS
+                            <i class="fa fa-chevron-down nav-icon"></i>
+                        </a>
+                        <section class="dropdown-menu px-2 dropdown-items" id="header-nav-elements-dropdown">
+                            <section class="dropdown-item dropdown-link header-nav-blog-link">
+                                <a href="#">TYPOGRAPHY</a>
+                            </section>
+
+                            <section class="dropdown-item dropdown-link header-nav-blog-link">
+                                <a href="#">BUTTONS</a>
+                            </section>
+
+                            <section class="dropdown-item dropdown-link header-nav-blog-link">
+                                <a href="#">ALERTS</a>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </header>
+
+    <main class="main">
+        <section class="slider-section position-relative">
+            <section class="slider-img">
+                <section class="slider-img-container d-flex">
+                    <img class="slider-img-1" src="assets/images/slider/slider-1.jpg" alt="Slider image 1">
+
+                    <img class="slider-img-2" src="assets/images/slider/slider-3.jpg" alt="Slider image 2">
+
+                    <img class="slider-img-3" src="assets/images/slider/slider-2.jpg" alt="Slider image 3">
+                </section>
+                
+                <section class="slider-caption center">
+                    <section>
+                        <h4>PRODUCTS</h4>
+
+                        <p>The beauty of nature</p>
+
+                        <p>is hidden in details.</p>
+
+                        <a href="#" class="slider-btn btn rounded-0 btn-outline-light">
+                            <span>Shop Now</span>
+                        </a>
+                    </section>
+                </section>
+
+                <img class="slider-dark-bcg img-fluid" src="assets/1595904.jpg" alt="">
+            </section>
+
+            <section class="slider-buttons">
+                <section class="prev-button">
+                    <span><</span>
+                </section>
+
+                <section class="next-button">
+                    <span>></span>
+                </section>
+            </section>
+
+            <section class="dots">
+                <span class="dot-1 dot active"></span>
+                <span class="dot-2 dot"></span>
+                <span class="dot-3 dot"></span>
+            </section>
+        </section>
+
+        <section class="product-category container">
+            <section class="product-container">
+                <header class="category-header my-4">
+                    <h1>PRODUCT CATEGORY</h1>
+                </header>
+
+                <section class="product-box-container">
+                    <section class="row">
+                        <section class="col-12 col-md-6">
+                            <section class="row">
+                                <section class="col-12 mb-md-4 my-2 box-50">
+                                    <section class="category-box position-relative">
+                                        <section class="product-img-container">
+                                            <a href="#">
+                                                <img class="img-fluid category-img c-img-1"
+                                                    src="assets/images/shop/category/category-1.jpg"
+                                                    alt="Category Image">
+                                            </a>
+                                        </section>
+
+                                        <section class="product-text-container">
+                                            <h3>Clothes Sales</h3>
+
+                                            <p>Shop New Season Clothing</p>
+                                        </section>
+                                    </section>
+                                </section>
+
+                                <section class="col-12 box-50 my-2 my-md-0">
+                                    <section class="category-box position-relative">
+                                        <section class="product-img-container">
+                                            <a href="#">
+                                                <img class="img-fluid category-img c-img-2"
+                                                    src="assets/images/shop/category/category-2.jpg"
+                                                    alt="Category Image">
+                                            </a>
+                                        </section>
+
+                                        <section class="product-text-container">
+                                            <h3>Smart Casuals</h3>
+
+                                            <p>Get Wide Range Selection</p>
+                                        </section>
+                                    </section>
+                                </section>
+                            </section>
+                        </section>
+
+                        <section class="col-12 col-md-6 box-100 my-2 my-md-0">
+                            <section class="category-box position-relative h-100">
+                                <section class="product-img-container h-100">
+                                    <a href="#">
+                                        <img class="img-fluid category-img c-img-3 h-100"
+                                            src="assets/images/shop/category/category-3.jpg" alt="Category Image">
+                                    </a>
+                                </section>
+
+                                <section class="product-text-container">
+                                    <h3>Jewellery</h3>
+
+                                    <p>Special Design Comes First</p>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+
+        <section class="trendy-products">
+            <section class="container">
+                <section class="trendy-container">
+                    <header class="trendy-header-section">
+                        <h1>TRENDY PRODUCTS</h1>
+                    </header>
+
+                    <section class="row">
+                        <section class="col-12 col-md-4 position-relative t1 trendy-box">
+                            <section class="sale-badge d-none">
+                                <span>Sale</span>
+                            </section>
+
+                            <section class="trendy-img-container">
+                                <img class="img-fluid trendy-img ti1" src="assets/images/shop/products/product-1.jpg"
+                                    alt="Product image">
+
+                                <img class="dark-bcg img-fluid" src="assets/1595904.jpg" alt="">
+                            </section>
+
+                            <section class="trendy-button-container">
+                                <button class="product-btn">
+                                    <i class="fa fa-search product-icon"></i>
+                                </button>
+
+                                <button class="product-btn">
+                                    <i class="fa fa-heart product-icon"></i>
+                                </button>
+
+                                <button class="product-btn shopCart shopCart1" value="1">
+                                    <i class="fa fa-shopping-cart product-icon"></i>
+                                </button>
+                            </section>
+
+                            <section class="trendy-price-text">
+                                <a class="my-2 d-flex justify-content-center th1 trendy-header" href="#">
+                                    Item 1
+                                </a>
+
+                                <p>
+                                    $<span class="tp1 trendy-price">200</span>
+                                </p>
+                            </section>
+                        </section>
+
+                        <section class="col-12 col-md-4 position-relative t2 trendy-box">
+                            <section class="sale-badge d-none">
+                                <span>Sale</span>
+                            </section>
+
+                            <section class="trendy-img-container">
+                                <img class="img-fluid trendy-img ti2" src="assets/images/shop/products/product-2.jpg"
+                                    alt="Product image">
+
+                                <img class="dark-bcg img-fluid" src="assets/1595904.jpg" alt="">
+                            </section>
+
+                            <section class="trendy-button-container">
+                                <button class="product-btn">
+                                    <i class="fa fa-search product-icon"></i>
+                                </button>
+
+                                <button class="product-btn">
+                                    <i class="fa fa-heart product-icon"></i>
+                                </button>
+
+                                <button class="product-btn shopCart shopCart2" value="2">
+                                    <i class="fa fa-shopping-cart product-icon"></i>
+                                </button>
+                            </section>
+
+                            <section class="trendy-price-text">
+                                <a class="my-2 d-flex justify-content-center th2 trendy-header" href="#">
+                                    Item 2
+                                </a>
+
+                                <p>
+                                    $<span class="tp2 trendy-price">220</span>
+                                </p>
+                            </section>
+                        </section>
+
+                        <section class="col-12 col-md-4 position-relative t3 trendy-box">
+                            <section class="sale-badge d-none">
+                                <span>Sale</span>
+                            </section>
+
+                            <section class="trendy-img-container">
+                                <img class="img-fluid trendy-img ti3" src="assets/images/shop/products/product-3.jpg"
+                                    alt="Product image">
+
+                                <img class="dark-bcg img-fluid" src="assets/1595904.jpg" alt="">
+                            </section>
+
+                            <section class="trendy-button-container">
+                                <button class="product-btn">
+                                    <i class="fa fa-search product-icon"></i>
+                                </button>
+
+                                <button class="product-btn">
+                                    <i class="fa fa-heart product-icon"></i>
+                                </button>
+
+                                <button class="product-btn shopCart shopCart3" value="3">
+                                    <i class="fa fa-shopping-cart product-icon"></i>
+                                </button>
+                            </section>
+
+                            <section class="trendy-price-text">
+                                <a class="my-2 d-flex justify-content-center th3 trendy-header" href="#">
+                                    Item 3
+                                </a>
+
+                                <p>
+                                    $<span class="tp3 trendy-price">230</span>
+                                </p>
+                            </section>
+                        </section>
+
+                        <section class="col-12 col-md-4 position-relative t4 trendy-box">
+                            <section class="sale-badge">
+                                <span>Sale</span>
+                            </section>
+
+                            <section class="trendy-img-container">
+                                <img class="img-fluid trendy-img ti4" src="assets/images/shop/products/product-4.jpg"
+                                    alt="Product image">
+
+                                <img class="dark-bcg img-fluid" src="assets/1595904.jpg" alt="">
+                            </section>
+
+                            <section class="trendy-button-container">
+                                <button class="product-btn">
+                                    <i class="fa fa-search product-icon"></i>
+                                </button>
+
+                                <button class="product-btn">
+                                    <i class="fa fa-heart product-icon"></i>
+                                </button>
+
+                                <button class="product-btn shopCart shopCart4" value="4">
+                                    <i class="fa fa-shopping-cart product-icon"></i>
+                                </button>
+                            </section>
+
+                            <section class="trendy-price-text">
+                                <a class="my-2 d-flex justify-content-center th4 trendy-header" href="#">
+                                    Item 4
+                                </a>
+
+                                <p>
+                                    $<span class="tp4 trendy-price">210</span>
+                                </p>
+                            </section>
+                        </section>
+
+                        <section class="col-12 col-md-4 position-relative t5 trendy-box">
+                            <section class="sale-badge d-none">
+                                <span>Sale</span>
+                            </section>
+
+                            <section class="trendy-img-container">
+                                <img class="img-fluid trendy-img ti5" src="assets/images/shop/products/product-5.jpg"
+                                    alt="Product image">
+
+                                <img class="dark-bcg img-fluid" src="assets/1595904.jpg" alt="">
+                            </section>
+
+                            <section class="trendy-button-container">
+                                <button class="product-btn">
+                                    <i class="fa fa-search product-icon"></i>
+                                </button>
+
+                                <button class="product-btn">
+                                    <i class="fa fa-heart product-icon"></i>
+                                </button>
+
+                                <button class="product-btn shopCart shopCart5" value="5">
+                                    <i class="fa fa-shopping-cart product-icon"></i>
+                                </button>
+                            </section>
+
+                            <section class="trendy-price-text">
+                                <a class="my-2 d-flex justify-content-center th5 trendy-header" href="#">
+                                    Item 5
+                                </a>
+
+                                <p>
+                                    $<span class="tp5 trendy-price">170</span>
+                                </p>
+                            </section>
+                        </section>
+
+                        <section class="col-12 col-md-4 position-relative t6 trendy-box">
+                            <section class="sale-badge d-none">
+                                <span>Sale</span>
+                            </section>
+
+                            <section class="trendy-img-container">
+                                <img class="trendy-img img-fluid ti6" src="assets/images/shop/products/product-6.jpg"
+                                    alt="Product image">
+
+                                <img class="dark-bcg img-fluid" src="assets/1595904.jpg" alt="">
+                            </section>
+
+                            <section class="trendy-button-container">
+                                <button class="product-btn">
+                                    <i class="fa fa-search product-icon"></i>
+                                </button>
+
+                                <button class="product-btn">
+                                    <i class="fa fa-heart product-icon"></i>
+                                </button>
+
+                                <button class="product-btn shopCart shopCart6" value="6">
+                                    <i class="fa fa-shopping-cart product-icon"></i>
+                                </button>
+                            </section>
+
+                            <section class="trendy-price-text">
+                                <a class="my-2 d-flex justify-content-center th6 trendy-header" href="#">
+                                    Item 6
+                                </a>
+
+                                <p>
+                                    $<span class="tp6 trendy-price">235</span>
+                                </p>
+                            </section>
+                        </section>
+
+                        <section class="col-12 col-md-4 position-relative t7 trendy-box">
+                            <section class="sale-badge">
+                                <span>Sale</span>
+                            </section>
+
+                            <section class="trendy-img-container">
+                                <img class="img-fluid trendy-img ti7" src="assets/images/shop/products/product-7.jpg"
+                                    alt="Product image">
+
+                                <img class="dark-bcg img-fluid" src="assets/1595904.jpg" alt="">
+                            </section>
+
+                            <section class="trendy-button-container">
+                                <button class="product-btn">
+                                    <i class="fa fa-search product-icon"></i>
+                                </button>
+
+                                <button class="product-btn">
+                                    <i class="fa fa-heart product-icon"></i>
+                                </button>
+
+                                <button class="product-btn shopCart shopCart7" value="7">
+                                    <i class="fa fa-shopping-cart product-icon"></i>
+                                </button>
+                            </section>
+
+                            <section class="trendy-price-text">
+                                <a class="my-2 d-flex justify-content-center th7 trendy-header" href="#">
+                                    Item 7
+                                </a>
+
+                                <p>
+                                    $<span class="tp7 trendy-price">120</span>
+                                </p>
+                            </section>
+                        </section>
+
+                        <section class="col-12 col-md-4 position-relative t8 trendy-box">
+                            <section class="sale-badge d-none">
+                                <span>Sale</span>
+                            </section>
+
+                            <section class="trendy-img-container">
+                                <img class="img-fluid trendy-img ti8" src="assets/images/shop/products/product-8.jpg"
+                                    alt="Product image">
+
+                                <img class="dark-bcg img-fluid" src="assets/1595904.jpg" alt="">
+                            </section>
+
+                            <section class="trendy-button-container">
+                                <button class="product-btn">
+                                    <i class="fa fa-search product-icon"></i>
+                                </button>
+
+                                <button class="product-btn">
+                                    <i class="fa fa-heart product-icon"></i>
+                                </button>
+
+                                <button class="product-btn shopCart shopCart8" value="8">
+                                    <i class="fa fa-shopping-cart product-icon"></i>
+                                </button>
+                            </section>
+
+                            <section class="trendy-price-text">
+                                <a class="my-2 d-flex justify-content-center th8 trendy-header" href="#">
+                                    Item 8
+                                </a>
+
+                                <p>
+                                    $<span class="tp8 trendy-price">180</span>
+                                </p>
+                            </section>
+                        </section>
+
+                        <section class="col-12 col-md-4 position-relative t9 trendy-box">
+                            <section class="sale-badge d-none">
+                                <span>Sale</span>
+                            </section>
+
+                            <section class="trendy-img-container">
+                                <img class="img-fluid trendy-img ti9" src="assets/images/shop/products/product-9.jpg"
+                                    alt="Product image">
+
+                                <img class="dark-bcg img-fluid" src="assets/1595904.jpg" alt="">
+                            </section>
+
+                            <section class="trendy-button-container">
+                                <button class="product-btn">
+                                    <i class="fa fa-search product-icon"></i>
+                                </button>
+
+                                <button class="product-btn">
+                                    <i class="fa fa-heart product-icon"></i>
+                                </button>
+
+                                <button class="product-btn shopCart shopCart9" value="9">
+                                    <i class="fa fa-shopping-cart product-icon"></i>
+                                </button>
+                            </section>
+
+                            <section class="trendy-price-text">
+                                <a class="my-2 d-flex justify-content-center th9 trendy-header" href="#">
+                                    Item 9
+                                </a>
+
+                                <p>
+                                    $<span class="tp9 trendy-price">225</span>
+                                </p>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+
+                <section class="newsletter-container">
+                    <h3>
+                        SUBSCRIBE TO NEWSLETTER
+                    </h3>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat,
+                        facilis numquam impedit ut sequi. Minus facilis vitae excepturi sit laboriosam.
+                    </p>
+
+                    <section class="newsletter-input">
+                        <input type="text" class="email-newsletter-input" placeholder="Enter Your Email Address">
+
+                        <span class="input-group-btn">
+                            <button class="subscribe-newsletter-btn" type="button">Subscribe Now!</button>
+                        </span>
+                    </section>
+                </section>
+            </section>
+        </section>
+
+        <section class="instagram-section py-5">
+            <section class="container">
+                <header class="instagram-header">
+                    <h1>VIEW US ON INSTAGRAM</h1>
+                </header>
+                <section class="instagram-container">
+                    <section class="row">
+                        <section class="col-6 col-sm-4 col-md-2 col-lg-12 my-1 instagram-img-content i1">
+                            <a href="#" class="instagram-link">
+                                <img class="grey-bcg img-fluid" src="assets/grey.jpg" alt="">
+
+                                <img class="instagram-image img-fluid"
+                                    src="https://scontent-mct1-1.cdninstagram.com/v/t51.2885-15/91846696_643876209518194_532827314761909988_n.jpg?_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=8ae9d6&amp;_nc_ohc=rQM87WcC1-MAX8Xne5m&amp;_nc_ht=scontent-mct1-1.cdninstagram.com&amp;edm=ANo9K5cEAAAA&amp;oh=00_AT_-HBe5LAI6CrQQxOaoMF_a68y_Q1UbVweH0Kg-J3SUyA&amp;oe=62E0DBC0"
+                                    alt="instagram-image">
+                            </a>
+                        </section>
+
+                        <section class="col-6 col-sm-4 col-md-2 col-lg-12 my-1 instagram-img-content i2">
+                            <a href="#" class="instagram-link">
+                                <img class="grey-bcg img-fluid" src="assets/grey.jpg" alt="">
+
+                                <img class="instagram-image img-fluid"
+                                    src="https://scontent.cdninstagram.com/v/t51.2885-15/90709202_702641303608541_1148532720313835468_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=dFTAT1vVo58AX_2gerY&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT9hsVAMV6jUQLh_MQcHBcCq5AHJTbGXDRrmAAkBPeMsSA&oe=62E07B20"
+                                    alt="instagram-image">
+                            </a>
+                        </section>
+
+                        <section class="col-6 col-sm-4 col-md-2 col-lg-12 my-1 instagram-img-content i3">
+                            <a href="#" class="instagram-link">
+                                <img class="grey-bcg img-fluid" src="assets/grey.jpg" alt="">
+
+                                <img class="instagram-image img-fluid"
+                                    src="https://scontent-mct1-1.cdninstagram.com/v/t51.2885-15/91233500_195873711860039_3890786202337752066_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=2ny1X03JmeoAX9bMqOg&_nc_ht=scontent-mct1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT-lU-hv0z1Vie3bvvOdBO7E9zdOi879JGnEjBGP-qJO6A&oe=62E0D4A2"
+                                    alt="instagram-image">
+                            </a>
+                        </section>
+
+                        <section class="col-6 col-sm-4 col-md-2 col-lg-12 my-1 instagram-img-content i4">
+                            <a href="#" class="instagram-link">
+                                <img class="grey-bcg img-fluid" src="assets/grey.jpg" alt="">
+
+                                <img class="instagram-image img-fluid"
+                                    src="https://scontent-mct1-1.cdninstagram.com/v/t51.2885-15/91126747_1086160688428851_7904030645569569609_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=CWKGkbyDnGIAX9hL59s&_nc_ht=scontent-mct1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT_QLNFSXYwiDSy9OH7maYAf9w4v_nKOCP_iDPvBvwfm2A&oe=62E04D00"
+                                    alt="instagram-image">
+                            </a>
+                        </section>
+
+                        <section class="col-6 col-sm-4 col-md-2 col-lg-12 my-1 instagram-img-content i5">
+                            <a href="#" class="instagram-link">
+                                <img class="grey-bcg img-fluid" src="assets/grey.jpg" alt="">
+
+                                <img class="instagram-image img-fluid"
+                                    src="https://scontent.cdninstagram.com/v/t51.2885-15/91168715_553665602198631_7096267060488569896_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=VzXzlf0VBtUAX-VzUWZ&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT9qJPbtSpK4Tz9oux2jKlYpe6bDhguWgGWlVVXPYoCh-g&oe=62E0B00E"
+                                    alt="instagram-image">
+                            </a>
+                        </section>
+
+                        <section class="col-6 col-sm-4 col-md-2 col-lg-12 my-1 instagram-img-content i6">
+                            <a href="#" class="instagram-link">
+                                <img class="grey-bcg img-fluid" src="assets/grey.jpg" alt="">
+
+                                <img class="instagram-image img-fluid"
+                                    src="https://scontent-mct1-1.cdninstagram.com/v/t51.2885-15/90482589_666062990600206_1945321731223612357_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=D5hsZFpCLvUAX-xSMiK&_nc_ht=scontent-mct1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT9cVYZY4NfQ6vE5SSyyu4zo8FXCRSSlMx56GiTCMAbKOg&oe=62E09B60"
+                                    alt="instagram-image">
+                            </a>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="container">
+            <section class="contact-us-section">
+                <section class="nav d-flex justify-content-center">
+                    <a href="#" class="nav-item nav-link">
+                        <i class="fab fa-facebook-f footer-icon"></i>
+                    </a>
+
+                    <a href="#" class="nav-item nav-link">
+                        <i class="fab fa-instagram footer-icon"></i>
+                    </a>
+
+                    <a href="#" class="nav-item nav-link">
+                        <i class="fab fa-twitter footer-icon"></i>
+                    </a>
+
+                    <a href="#" class="nav-item nav-link">
+                        <i class="fab fa-pinterest footer-icon"></i>
+                    </a>
+                </section>
+            </section>
+
+            <section class="footer-nav my-3">
+                <section class="nav d-flex justify-content-center">
+                    <a class="nav-link nav-item footer-nav-link" href="#">
+                        CONTACT
+                    </a>
+
+                    <a class="nav-link nav-item footer-nav-link" href="#">
+                        SHOP
+                    </a>
+
+                    <a class="nav-link nav-item footer-nav-link" href="#">
+                        PRICING
+                    </a>
+
+                    <a class="nav-link nav-item footer-nav-link" href="#">
+                        PRIVACY POLICY
+                    </a>
+                </section>
+            </section>
+
+            <section class="copyright-section d-flex justify-content-center">
+                <span class="copyright-text">
+                    Copyright ©2021, Designed & Developed by <a href="#" class="copyright-link">Themefisher</a>
+                </span>
+            </section>
+        </section>
+    </footer>
+
+
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/js/slider.js"></script>
+</body>
+
+</html>

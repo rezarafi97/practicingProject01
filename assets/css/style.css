@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "themefisher-font";
+    src: url(../fonts/themefisher-font.ttf) format(ttf);
+    src: url(../fonts/themefisher-font.eot) format(eot);
+    src: url(../fonts/themefisher-font.woff) format(woff);
+}
+
+@font-face {
+    font-family: "Poppins Latin";
+    src: url(../fonts/PoppinsLatin-Regular.otf) format(otf);
+    src: url(../fonts/PoppinsLatin-Regular.ttf) format(ttf);
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url(../fonts/PlayfairDisplay-Regular.otf) format(otf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins Latin", sans-serif;
+}
+
+.dropdown-items {
+    top: 60px;
+}
